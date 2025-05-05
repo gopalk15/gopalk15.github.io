@@ -1,99 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaylin Gopal Consulting</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <div class="nav-wrapper">
-            <div class="left-side">
-                <div class="nav-link-wrapper">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="about.html">About Me</a>
-                </div>
-            </div>
-            <div class="right-side">
-                <div class="brand">
-                    <div>Kaylin Gopal</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-wrapper">
-            <div class="portfolio-items-wrapper">
-                <a href="tvc.html">
-                    <div class="portfolio-item-wrapper">
-
-                        <div class="portfolio-img-background" style="background-image:url(images/Hale-port.jpeg);"></div>
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/Hale.png">
-                            </div>
-                            <div class="subtitle">
-                                Thrust Vector Control (TVC)
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="iec.html">
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/fusor.jpg);"></div>
-
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/IEC.png">
-                            </div>
-                            <div class="subtitle">
-                                Inertial Electrostatic Confinement Fusion
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg);"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/quip.png">
-                        </div>
-                        <div class="subtitle">
-                            TBA
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+      <div class="flex space-x-3 justify-center items-center w-1/2">
+        <img src="images/logo.png" alt="Logo" class="w-14 h-14"/>
+        <h1 class="text-2xl font-bold">Kaylin Gopal Consulting</h1>
+      </div>
+      <nav class="space-x-4">
+        <a href="#services" class="text-sm hover:text-indigo-600">Services</a>
+        <a href="#competencies" class="text-sm hover:text-indigo-600">Competencies</a>
+        <a href="#contact" class="text-sm hover:text-indigo-600">Contact</a>
+      </nav>
     </div>
+  </header>
 
+  <section class="py-16 px-4 text-center bg-gradient-to-br from-indigo-50 to-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">IoT Systems Integration & Monitoring Solutions</h2>
+      <p class="text-lg text-gray-600">
+        Specializing in end-to-end IoT system development, integration, and monitoring — from sensor data ingestion to real-time dashboards and analytics.
+      </p>
+    </div>
+  </section>
 
+  <section id="services" class="py-16 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-8 text-center">Services</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="text-xl font-semibold text-indigo-700 mb-2">IoT System Integrations & Monitoring Dashboards</h4>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Integration with sensors and embedded systems</li>
+            <li>Real-time monitoring dashboards for operational visibility</li>
+            <li>Custom data visualization and telemetry insights</li>
+            <li>Automated report generation and anomaly detection</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-indigo-700 mb-2">DevOps & Observability</h4>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>CI/CD pipeline setup</li>
+            <li>OpenTelemetry observability implementation</li>
+            <li>Cloud readiness and IoT deployment strategies</li>
+            <li>Monitoring, alerting, and log aggregation</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-indigo-700 mb-2">QA & Test Automation</h4>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Automated testing for IoT applications</li>
+            <li>API and integration testing</li>
+            <li>Playwright, Selenium, REST Assured</li>
+            <li>CI-integrated test pipelines</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-indigo-700 mb-2">Frontend Development</h4>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>React + TypeScript interfaces for IoT data</li>
+            <li>Real-time UI updates and visual feedback</li>
+            <li>Custom admin and analytics panels</li>
+            <li>Next.js and responsive design principles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competencies" class="py-16 px-4 bg-indigo-50">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Core Competencies</h3>
+      <ul class="grid grid-cols-2 gap-4 list-disc list-inside text-gray-700">
+        <li>IoT Sensor Integration</li>
+        <li>Real-Time Monitoring Dashboards</li>
+        <li>System & Hardware Interfacing</li>
+        <li>DevOps & CI/CD Automation</li>
+        <li>Observability & Logging (OpenTelemetry)</li>
+        <li>Frontend UI/UX Development</li>
+        <li>Data Visualization & Reporting</li>
+        <li>Test Automation & QA Strategy</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 px-4 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+      <p class="mb-2">Kaylin Gopal</p>
+      <p class="mb-2">📧 kaylingopal@gmail.com</p>
+      <p class="mb-2">📞 +27 82 763 7526</p>
+      <p class="mb-2">🌍 Cape Town, South Africa</p>
+      <p class="mb-2">🔗 <a href="https://linkedin.com/in/gopalk1998" class="text-indigo-600 hover:underline">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-sm text-gray-500">
+    &copy; 2025 Kaylin Gopal Consulting. All rights reserved.
+  </footer>
 </body>
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
-
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover',() => {
-            console.log(portfolioItem.childNodes[1].classList);
-            portfolioItem.childNodes[1].classList.add('img-darken')
-
-        })
-        portfolioItem.addEventListener('mouseout',() => {
-            console.log(portfolioItem.childNodes[1].classList);
-            portfolioItem.childNodes[1].classList.remove('img-darken')
-
-        })
-    })
-</script>
-    
-
 </html>
