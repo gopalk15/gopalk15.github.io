@@ -5,28 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rumo Email Signature</title>
   <style>
-    /* ----- RESPONSIVE STYLES ----- */
     @media screen and (max-width: 480px) {
-      /* Force columns to stack */
-      .stack-column {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        text-align: left !important;
-      }
-      /* Add space between stacked logo and text */
-      .stack-column-logo {
-        padding-right: 0 !important;
-        padding-bottom: 20px !important;
-      }
-       /* Adjust padding for the text column */
-      .stack-column-text {
-        padding-left: 0 !important;
-      }
-      /* Hide the vertical separator line on mobile */
-      .separator-line {
-        display: none !important;
-      }
+      .stack-column { display: block !important; width: 100% !important; max-width: 100% !important; text-align: left !important; }
+      .stack-column-logo { padding-right: 0 !important; padding-bottom: 20px !important; }
+      .stack-column-text { padding-left: 0 !important; }
+      .separator-line { display: none !important; }
     }
   </style>
 </head>
@@ -34,7 +17,6 @@
   <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%; max-width: 550px; font-family: Arial, sans-serif; font-size: 12px; color: #333333;">
     <tr>
       <!-- === LEFT COLUMN: CLICKABLE LOGO === -->
-      <!-- Added class="stack-column" and "stack-column-logo" -->
       <td class="stack-column stack-column-logo" style="width: 100px; padding-right: 20px; vertical-align: middle;">
         <a href="https://rumo.network" target="_blank">
           <img src="https://gopalk15.github.io/images/rumo/logo.png" alt="Rumo Logo" width="80" style="display: block; width: 80px;">
@@ -42,60 +24,55 @@
       </td>
 
       <!-- === MIDDLE COLUMN: SEPARATOR LINE === -->
-      <!-- Added class="separator-line" -->
       <td class="separator-line" style="width: 1px; border-left: 1px solid #D93B6A;"></td>
 
       <!-- === RIGHT COLUMN: CONTACT INFORMATION === -->
-      <!-- Added class="stack-column" and "stack-column-text" -->
       <td class="stack-column stack-column-text" style="padding-left: 20px; vertical-align: middle;">
-        <!-- Name -->
-        <p style="margin: 0; font-size: 18px; font-weight: bold; color: #D93B6A; text-transform: uppercase;">
-          KEELAN GOVENDER
-        </p>
-        <!-- Title -->
-        <p style="margin: 4px 0 12px 0; font-size: 14px; color: #D93B6A;">
-          Co-Founder
-        </p>
+        <p style="margin: 0; font-size: 18px; font-weight: bold; color: #D93B6A; text-transform: uppercase;">KEELAN GOVENDER</p>
+        <p style="margin: 4px 0 12px 0; font-size: 14px; color: #D93B6A;">Co-Founder</p>
 
-        <!-- Nested table for icon alignment -->
         <table role="presentation" cellspacing="0" cellpadding="0" border="0">
           <!-- Phone Number -->
           <tr>
             <td style="width: 20px; vertical-align: middle;">
-              <img src="https://img.icons8.com/ios-filled/50/D93B6A/phone.png" alt="Phone" width="14" style="display: block; width: 14px;">
+              <!-- MODIFICATION: alt attribute is now empty -->
+              <img src="https://img.icons8.com/ios-filled/50/D93B6A/phone.png" alt="" width="14" style="display: block; width: 14px;">
             </td>
             <td style="padding-left: 8px; vertical-align: middle;">
               <a href="tel:061-410-7615" style="font-size: 12px; color: #333333; text-decoration: none;">061-410-7615</a>
             </td>
           </tr>
-          <tr style="height: 5px;"><td colspan="2"></td></tr> <!-- Spacer -->
+          <tr style="height: 5px;"><td colspan="2"></td></tr>
 
           <!-- Email Address -->
           <tr>
             <td style="width: 20px; vertical-align: middle;">
-              <img src="https://img.icons8.com/ios-filled/50/D93B6A/new-post.png" alt="Email" width="14" style="display: block; width: 14px;">
+              <!-- MODIFICATION: alt attribute is now empty -->
+              <img src="https://img.icons8.com/ios-filled/50/D93B6A/new-post.png" alt="" width="14" style="display: block; width: 14px;">
             </td>
             <td style="padding-left: 8px; vertical-align: middle;">
               <a href="mailto:keelan@rumo.network" style="font-size: 12px; color: #333333; text-decoration: none;">keelan@rumo.network</a>
             </td>
           </tr>
-          <tr style="height: 5px;"><td colspan="2"></td></tr> <!-- Spacer -->
+          <tr style="height: 5px;"><td colspan="2"></td></tr>
 
           <!-- Address -->
           <tr>
             <td style="width: 20px; vertical-align: middle;">
-              <img src="https://img.icons8.com/ios-filled/50/D93B6A/marker.png" alt="Address" width="14" style="display: block; width: 14px;">
+              <!-- MODIFICATION: alt attribute is now empty -->
+              <img src="https://img.icons8.com/ios-filled/50/D93B6A/marker.png" alt="" width="14" style="display: block; width: 14px;">
             </td>
             <td style="padding-left: 8px; vertical-align: middle;">
               <span style="font-size: 12px; color: #333333;">10 Rua Vasco Da Gama Plain, Foreshore, Cape Town, 8001</span>
             </td>
           </tr>
-          <tr style="height: 5px;"><td colspan="2"></td></tr> <!-- Spacer -->
+          <tr style="height: 5px;"><td colspan="2"></td></tr>
 
           <!-- Website -->
           <tr>
             <td style="width: 20px; vertical-align: middle;">
-              <img src="https://img.icons8.com/ios-filled/50/D93B6A/globe.png" alt="Website" width="14" style="display: block; width: 14px;">
+              <!-- MODIFICATION: alt attribute is now empty -->
+              <img src="https://img.icons8.com/ios-filled/50/D93B6A/globe.png" alt="" width="14" style="display: block; width: 14px;">
             </td>
             <td style="padding-left: 8px; vertical-align: middle;">
               <a href="https://rumo.network" target="_blank" style="font-size: 12px; color: #333333; text-decoration: none;">https://rumo.network</a>
