@@ -2,23 +2,52 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rumo Email Signature</title>
+  <style>
+    /* ----- RESPONSIVE STYLES ----- */
+    @media screen and (max-width: 480px) {
+      /* Force columns to stack */
+      .stack-column {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: left !important;
+      }
+      /* Add space between stacked logo and text */
+      .stack-column-logo {
+        padding-right: 0 !important;
+        padding-bottom: 20px !important;
+      }
+       /* Adjust padding for the text column */
+      .stack-column-text {
+        padding-left: 0 !important;
+      }
+      /* Hide the vertical separator line on mobile */
+      .separator-line {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
-<body>
+<body style="margin:0; padding:0;">
   <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%; max-width: 550px; font-family: Arial, sans-serif; font-size: 12px; color: #333333;">
     <tr>
       <!-- === LEFT COLUMN: CLICKABLE LOGO === -->
-      <td style="width: 100px; padding-right: 20px; vertical-align: middle;">
+      <!-- Added class="stack-column" and "stack-column-logo" -->
+      <td class="stack-column stack-column-logo" style="width: 100px; padding-right: 20px; vertical-align: middle;">
         <a href="https://rumo.network" target="_blank">
           <img src="https://gopalk15.github.io/images/rumo/logo.png" alt="Rumo Logo" width="80" style="display: block; width: 80px;">
         </a>
       </td>
 
       <!-- === MIDDLE COLUMN: SEPARATOR LINE === -->
-      <td style="width: 1px; border-left: 1px solid #D93B6A;"></td>
+      <!-- Added class="separator-line" -->
+      <td class="separator-line" style="width: 1px; border-left: 1px solid #D93B6A;"></td>
 
       <!-- === RIGHT COLUMN: CONTACT INFORMATION === -->
-      <td style="padding-left: 20px; vertical-align: middle;">
+      <!-- Added class="stack-column" and "stack-column-text" -->
+      <td class="stack-column stack-column-text" style="padding-left: 20px; vertical-align: middle;">
         <!-- Name -->
         <p style="margin: 0; font-size: 18px; font-weight: bold; color: #D93B6A; text-transform: uppercase;">
           KEELAN GOVENDER
